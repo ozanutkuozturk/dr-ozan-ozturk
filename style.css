@@ -217,19 +217,48 @@ body {
   margin-top: 4px;
 }
 
+/* KİŞİSEL BİLGİLER */
+.kisisel-bilgiler {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kb-item {
+  display: flex;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--gri);
+}
+
+.kb-etiket {
+  font-weight: 600;
+  color: var(--lacivert);
+  min-width: 100px;
+}
+
 /* ÖZGEÇMİŞ */
 #ozgecmis {
   background: var(--acik-gri);
 }
 
-.timeline {
+.ozgecmis-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 48px;
+  align-items: start;
 }
 
-.timeline-kategori h3 {
-  font-size: 1.1rem;
+.timeline-blok {
+  background: var(--beyaz);
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid #e2e8f0;
+}
+
+.blok-baslik {
+  font-size: 1rem;
   color: var(--magavi);
   font-weight: 700;
   margin-bottom: 24px;
@@ -240,11 +269,11 @@ body {
 .timeline-item {
   display: flex;
   gap: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .timeline-yil {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--magavi);
   font-weight: 600;
   white-space: nowrap;
@@ -253,15 +282,84 @@ body {
 }
 
 .timeline-icerik h4 {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: var(--lacivert);
   margin-bottom: 4px;
 }
 
 .timeline-icerik p {
+  font-size: 0.82rem;
+  color: var(--gri);
+  line-height: 1.6;
+}
+
+.timeline-icerik em {
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+
+.uyelik-listesi {
+  list-style: none;
+  padding: 0;
+}
+
+.uyelik-listesi li {
   font-size: 0.875rem;
   color: var(--gri);
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.uyelik-listesi li:last-child {
+  border-bottom: none;
+}
+
+.patent-kutu {
+  background: var(--acik-magavi);
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 0.875rem;
+  color: var(--gri);
+  line-height: 1.7;
+}
+
+.patent-kutu strong {
+  color: var(--lacivert);
+}
+
+/* YAYINLAR */
+#yayinlar {
+  background: var(--acik-gri);
+}
+
+.yayin-grup {
+  margin-bottom: 48px;
+}
+
+.yayin-grup-baslik {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--magavi);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--magavi);
+}
+
+.yayin-listesi {
+  padding-left: 20px;
+}
+
+.yayin-listesi li {
+  font-size: 0.875rem;
+  color: var(--gri);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.yayin-listesi li em {
+  color: var(--lacivert);
+  font-style: italic;
 }
 
 /* AMELİYATLAR */
