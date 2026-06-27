@@ -501,6 +501,37 @@ body {
   font-size: 0.9rem;
 }
 
+.calisma-saatleri {
+  min-width: 300px;
+}
+
+.gun-tablosu {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  font-size: 0.875rem;
+}
+
+.gun-tablosu tr {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.gun-tablosu tr:last-child {
+  border-bottom: none;
+}
+
+.gun-tablosu td {
+  padding: 8px 4px;
+  color: var(--gri);
+  text-align: left;
+}
+
+.gun-tablosu .gun {
+  font-weight: 600;
+  color: var(--lacivert);
+  width: 100px;
+}
+
 /* FOOTER */
 footer {
   background: var(--lacivert);
