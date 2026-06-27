@@ -382,6 +382,7 @@
           <div class="iletisim-ikon">✉️</div>
           <h3>E-posta</h3>
           <a href="mailto:ozanutkuozturk@gmail.com">ozanutkuozturk@gmail.com</a>
+          <button class="yaz-btn" id="yazBtn">Op.Dr. Ozan Utku Öztürk'e Yazın</button>
         </div>
         <div class="iletisim-kart">
           <div class="iletisim-ikon">🏥</div>
@@ -402,6 +403,43 @@
       </div>
     </div>
   </section>
+
+  <!-- HASTA MESAJ FORMU -->
+  <div id="hastaForm" class="hasta-form-overlay" style="display:none">
+    <div class="hasta-form-kart">
+      <button class="form-kapat" id="formKapat">✕</button>
+      <h3>Op.Dr. Ozan Utku Öztürk'e Yazın</h3>
+      <p class="form-aciklama">Mesajınız doğrudan hekime iletilecektir.</p>
+      <form action="https://formsubmit.co/ozanutkuozturk@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Yeni Hasta Mesajı — Dr. Ozan Utku Öztürk">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <div class="form-ust">
+          <div class="form-grup">
+            <label>İsim</label>
+            <input type="text" name="isim" placeholder="İsminizi yazın" required>
+          </div>
+          <div class="form-grup">
+            <label>Soyisim</label>
+            <input type="text" name="soyisim" placeholder="Soyisminizi yazın" required>
+          </div>
+          <div class="form-grup form-grup-kisa">
+            <label>Yaş</label>
+            <input type="number" name="yas" placeholder="Yaşınız" min="0" max="120" required>
+          </div>
+        </div>
+        <div class="form-grup">
+          <label>E-posta <span class="opsiyonel">(isteğe bağlı)</span></label>
+          <input type="email" name="email" placeholder="Yanıt için e-posta adresiniz">
+        </div>
+        <div class="form-grup">
+          <label>Mesajınız</label>
+          <textarea name="mesaj" placeholder="Soru, şikayet veya randevu talebinizi yazabilirsiniz..." rows="5" required></textarea>
+        </div>
+        <button type="submit" class="form-gonder">Gönder</button>
+      </form>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer>

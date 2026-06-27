@@ -23,6 +23,32 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Hasta mesaj formu
+const yazBtn = document.getElementById('yazBtn');
+const hastaForm = document.getElementById('hastaForm');
+const formKapat = document.getElementById('formKapat');
+
+if (yazBtn) {
+  yazBtn.addEventListener('click', () => {
+    hastaForm.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  });
+}
+
+if (formKapat) {
+  formKapat.addEventListener('click', () => {
+    hastaForm.style.display = 'none';
+    document.body.style.overflow = '';
+  });
+}
+
+hastaForm && hastaForm.addEventListener('click', (e) => {
+  if (e.target === hastaForm) {
+    hastaForm.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+});
+
 // Anket butonu — link eklenmeden tıklanırsa uyarı ver
 document.getElementById('anketBtn').addEventListener('click', (e) => {
   const href = e.currentTarget.getAttribute('href');
