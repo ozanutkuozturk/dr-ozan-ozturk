@@ -95,7 +95,10 @@ body {
 /* HERO */
 #hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, #060d1f 0%, #0f1f40 40%, #0f2a6e 75%, #1040a0 100%);
+  background: linear-gradient(135deg, rgba(6,13,31,0.88) 0%, rgba(15,32,64,0.82) 40%, rgba(15,42,110,0.78) 75%, rgba(16,64,160,0.72) 100%), url('images/arkaplan.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -475,18 +478,14 @@ body {
   box-shadow: 0 16px 40px rgba(37, 99, 235, 0.15);
 }
 
-.ameliyat-ikon-wrap {
-  width: 56px;
-  height: 56px;
-  background: var(--acik-gri);
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
+.ameliyat-gorsel {
+  width: calc(100% + 56px);
+  margin: -36px -28px 24px -28px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  display: block;
 }
-
-.ameliyat-ikon-wrap svg { width: 34px; height: 34px; }
 
 .ameliyat-kart h3 {
   font-size: 1rem;
