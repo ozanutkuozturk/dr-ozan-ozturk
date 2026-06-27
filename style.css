@@ -271,20 +271,13 @@ body {
   align-items: start;
 }
 
-.photo-placeholder {
+.profil-foto {
   width: 100%;
   aspect-ratio: 3/4;
-  background: linear-gradient(135deg, #eff6ff, #dbeafe);
-  border: 2px dashed #93c5fd;
+  object-fit: cover;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  color: var(--magavi);
-  font-size: 0.85rem;
-  font-weight: 600;
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
+  display: block;
 }
 
 .hakkimda-text p {
