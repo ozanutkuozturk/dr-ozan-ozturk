@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ozanutkuozturk.github.io/dr-ozan-ozturk/sitemap.xml
