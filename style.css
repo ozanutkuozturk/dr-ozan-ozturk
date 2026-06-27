@@ -487,6 +487,13 @@ body {
   display: block;
 }
 
+.ameliyat-gorsel-ikon {
+  background: linear-gradient(135deg, #1e3a6e, #2563eb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .ameliyat-kart h3 {
   font-size: 1rem;
   font-weight: 700;
