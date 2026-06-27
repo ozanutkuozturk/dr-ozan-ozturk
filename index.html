@@ -6,14 +6,24 @@
   <title>Op.Dr. Ozan Utku Öztürk | Genel Cerrahi Uzmanı</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- NAVİGASYON -->
   <nav id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">Op.Dr. Ozan Utku Öztürk</a>
+      <a href="#hero" class="nav-logo">
+        <svg class="logo-mark" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="30" r="28" fill="#0f172a"/>
+          <circle cx="30" cy="30" r="28" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+          <rect x="27" y="8" width="6" height="26" rx="3" fill="white"/>
+          <rect x="22" y="33" width="16" height="3.5" rx="1.75" fill="#60a5fa"/>
+          <path d="M27 36.5 Q30 50 30 51 Q30 50 33 36.5 Z" fill="white"/>
+          <text x="30" y="57" text-anchor="middle" fill="#93c5fd" font-size="7" font-family="Georgia,serif" letter-spacing="1.5" font-weight="bold">OUÖ</text>
+        </svg>
+        <span>Op.Dr. Ozan Utku Öztürk</span>
+      </a>
       <button class="nav-toggle" id="navToggle">&#9776;</button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#hakkimda">Hakkımda</a></li>
@@ -28,11 +38,65 @@
 
   <!-- HERO -->
   <section id="hero">
+    <!-- Cerrahi enstrümanlar (dekoratif) -->
+    <div class="hero-instruments">
+      <!-- Bisturi -->
+      <svg class="hi hi-scalpel" viewBox="0 0 28 180" xmlns="http://www.w3.org/2000/svg">
+        <rect x="9" y="0" width="10" height="118" rx="5" fill="white"/>
+        <rect x="4" y="116" width="20" height="5" rx="2.5" fill="#93c5fd"/>
+        <path d="M9 121 Q14 163 14 168 Q14 163 19 121 Z" fill="white"/>
+        <line x1="9" y1="30" x2="19" y2="30" stroke="#93c5fd" stroke-width="1" opacity="0.6"/>
+        <line x1="9" y1="50" x2="19" y2="50" stroke="#93c5fd" stroke-width="1" opacity="0.6"/>
+        <line x1="9" y1="70" x2="19" y2="70" stroke="#93c5fd" stroke-width="1" opacity="0.6"/>
+        <line x1="9" y1="90" x2="19" y2="90" stroke="#93c5fd" stroke-width="1" opacity="0.6"/>
+      </svg>
+      <!-- Makas -->
+      <svg class="hi hi-scissors" viewBox="0 0 80 190" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="18" cy="18" r="14" fill="none" stroke="white" stroke-width="3.5"/>
+        <circle cx="62" cy="18" r="14" fill="none" stroke="white" stroke-width="3.5"/>
+        <line x1="18" y1="32" x2="40" y2="95" stroke="white" stroke-width="5" stroke-linecap="round"/>
+        <line x1="62" y1="32" x2="40" y2="95" stroke="white" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="40" cy="95" r="5" fill="#60a5fa"/>
+        <line x1="40" y1="100" x2="24" y2="182" stroke="white" stroke-width="4" stroke-linecap="round"/>
+        <line x1="40" y1="100" x2="56" y2="182" stroke="white" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <!-- Forseps -->
+      <svg class="hi hi-forceps" viewBox="0 0 54 210" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="15" cy="15" r="12" fill="none" stroke="white" stroke-width="3.5"/>
+        <circle cx="39" cy="15" r="12" fill="none" stroke="white" stroke-width="3.5"/>
+        <path d="M15 27 C15 90 27 155 27 200" stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <path d="M39 27 C39 90 27 155 27 200" stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <rect x="11" y="100" width="32" height="5" rx="2.5" fill="white" opacity="0.5"/>
+        <rect x="11" y="112" width="32" height="5" rx="2.5" fill="white" opacity="0.5"/>
+        <rect x="11" y="124" width="32" height="5" rx="2.5" fill="white" opacity="0.5"/>
+      </svg>
+      <!-- İğne tutucu -->
+      <svg class="hi hi-needle" viewBox="0 0 30 220" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="15" cy="14" r="11" fill="none" stroke="white" stroke-width="3"/>
+        <line x1="15" y1="25" x2="15" y2="215" stroke="white" stroke-width="4" stroke-linecap="round"/>
+        <rect x="9" y="90" width="12" height="4" rx="2" fill="white" opacity="0.5"/>
+        <rect x="9" y="105" width="12" height="4" rx="2" fill="white" opacity="0.5"/>
+        <path d="M12 212 L15 220 L18 212 Z" fill="white"/>
+      </svg>
+    </div>
+
+    <!-- Hero içeriği -->
     <div class="hero-content">
+      <svg class="hero-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="47" fill="rgba(15,23,42,0.7)"/>
+        <circle cx="50" cy="50" r="47" fill="none" stroke="#60a5fa" stroke-width="2"/>
+        <rect x="44" y="14" width="12" height="44" rx="6" fill="white"/>
+        <rect x="36" y="56" width="28" height="6" rx="3" fill="#60a5fa"/>
+        <path d="M44 62 Q50 84 50 87 Q50 84 56 62 Z" fill="white"/>
+        <text x="50" y="96" text-anchor="middle" fill="#93c5fd" font-size="12" font-family="Georgia,serif" letter-spacing="2" font-weight="bold">OUÖ</text>
+      </svg>
       <p class="hero-unvan">Genel Cerrahi Uzmanı · FTBS</p>
       <h1>Op.Dr. Ozan Utku Öztürk</h1>
-      <p class="hero-hastane">Hatay Eğitim ve Araştırma Hastanesi<br>Genel Cerrahi Kliniği</p>
-      <a href="#iletisim" class="btn-primary">İletişime Geç</a>
+      <p class="hero-hastane">Hatay Eğitim ve Araştırma Hastanesi<br>Genel Cerrahi 4. Polikliniği</p>
+      <div class="hero-butonlar">
+        <a href="#iletisim" class="btn-primary">İletişime Geç</a>
+        <a href="#ameliyatlar" class="btn-outline">Ameliyatlar</a>
+      </div>
     </div>
   </section>
 
@@ -43,41 +107,27 @@
       <div class="hakkimda-grid">
         <div class="hakkimda-photo">
           <div class="photo-placeholder">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" style="width:60px;opacity:0.3">
+              <circle cx="40" cy="28" r="18" fill="#3b82f6"/>
+              <ellipse cx="40" cy="70" rx="28" ry="20" fill="#3b82f6"/>
+            </svg>
             <span>Fotoğraf</span>
           </div>
         </div>
         <div class="hakkimda-text">
-          <p>
-            1989 yılında Antakya'da doğdum. Ege Üniversitesi Tıp Fakültesi'nden mezun olduktan sonra Hatay Mustafa Kemal Üniversitesi'nde Genel Cerrahi uzmanlık eğitimimi tamamladım.
-          </p>
-          <p>
-            Türk Cerrahi Derneği Yeterlilik Sertifikası (FTBS) sahibiyim. Tiroid cerrahisi, laparoskopik kolesistektomi, sleeve gastrektomi ve karın duvarı fıtıkları başta olmak üzere geniş bir yelpazede cerrahi müdahaleler uygulamaktayım.
-          </p>
-          <p>
-            Ulusal ve uluslararası 12 makale, 3 kitap bölümü ve 1 ulusal patent başvurusu bulunmaktadır. Hastalarımın güvenliği ve konforunu ön planda tutarak güncel cerrahi teknikleri takip etmeye özen gösteriyorum.
-          </p>
+          <p>1989 yılında Antakya'da doğdum. Ege Üniversitesi Tıp Fakültesi'nden mezun olduktan sonra Hatay Mustafa Kemal Üniversitesi'nde Genel Cerrahi uzmanlık eğitimimi tamamladım.</p>
+          <p>Türk Cerrahi Derneği Yeterlilik Sertifikası (FTBS) sahibiyim. Tiroid cerrahisi, laparoskopik kolesistektomi, sleeve gastrektomi ve karın duvarı fıtıkları başta olmak üzere geniş bir yelpazede cerrahi müdahaleler uygulamaktayım.</p>
+          <p>Ulusal ve uluslararası 12 makale, 3 kitap bölümü ve 1 ulusal patent başvurusu bulunmaktadır.</p>
           <div class="kisisel-bilgiler">
             <div class="kb-item"><span class="kb-etiket">Doğum</span><span>25.05.1989, Antakya</span></div>
             <div class="kb-item"><span class="kb-etiket">Medeni Hal</span><span>Evli, 3 çocuk babası</span></div>
             <div class="kb-item"><span class="kb-etiket">Yabancı Dil</span><span>İngilizce</span></div>
           </div>
           <div class="istatistikler">
-            <div class="istat">
-              <span class="istat-sayi">12</span>
-              <span class="istat-label">Makale</span>
-            </div>
-            <div class="istat">
-              <span class="istat-sayi">3</span>
-              <span class="istat-label">Kitap Bölümü</span>
-            </div>
-            <div class="istat">
-              <span class="istat-sayi">1</span>
-              <span class="istat-label">Patent</span>
-            </div>
-            <div class="istat">
-              <span class="istat-sayi">10+</span>
-              <span class="istat-label">Yıl Deneyim</span>
-            </div>
+            <div class="istat"><span class="istat-sayi">12</span><span class="istat-label">Makale</span></div>
+            <div class="istat"><span class="istat-sayi">3</span><span class="istat-label">Kitap Bölümü</span></div>
+            <div class="istat"><span class="istat-sayi">1</span><span class="istat-label">Patent</span></div>
+            <div class="istat"><span class="istat-sayi">10+</span><span class="istat-label">Yıl Deneyim</span></div>
           </div>
         </div>
       </div>
@@ -90,107 +140,72 @@
       <h2 class="section-title">Özgeçmiş</h2>
       <div class="ozgecmis-grid">
 
-        <!-- EĞİTİM -->
         <div class="timeline-blok">
           <h3 class="blok-baslik">Eğitim</h3>
           <div class="timeline-item">
             <div class="timeline-yil">2004–2008</div>
-            <div class="timeline-icerik">
-              <h4>Lise</h4>
-              <p>Hatay Selim Nevzat Şahin Anadolu Lisesi</p>
-            </div>
+            <div class="timeline-icerik"><h4>Lise</h4><p>Hatay Selim Nevzat Şahin Anadolu Lisesi</p></div>
           </div>
           <div class="timeline-item">
             <div class="timeline-yil">2009–2015</div>
-            <div class="timeline-icerik">
-              <h4>Tıp Fakültesi</h4>
-              <p>Ege Üniversitesi Tıp Fakültesi</p>
-            </div>
+            <div class="timeline-icerik"><h4>Tıp Fakültesi</h4><p>Ege Üniversitesi Tıp Fakültesi</p></div>
           </div>
           <div class="timeline-item">
             <div class="timeline-yil">2012–2015</div>
             <div class="timeline-icerik">
-              <h4>AEP — Araştırmacı Eğitim ve İkinci Diploma Programı</h4>
-              <p>Ege Üniversitesi Tıp Fakültesi<br>
-              <em>Proje: Çölyak Hastalarında Primer Laktaz Eksikliği Sıklığı</em></p>
+              <h4>AEP — Araştırmacı Eğitim Programı</h4>
+              <p>Ege Üniversitesi Tıp Fakültesi<br><em>Proje: Çölyak Hastalarında Primer Laktaz Eksikliği Sıklığı</em></p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-yil">2016–2021</div>
             <div class="timeline-icerik">
               <h4>Genel Cerrahi Uzmanlık Eğitimi</h4>
-              <p>Hatay Mustafa Kemal Üniversitesi Tayfur Ata Sökmen Tıp Fakültesi<br>
-              <em>Tez: Karaciğer Parankim Kanaması Modeli Oluşturulan Ratlarda Inula viscosa ve Capsella bursa-pastoris Bitki Ekstrakt Karışımının Hemostatik Etkisi</em></p>
+              <p>Hatay MKÜ Tayfur Ata Sökmen Tıp Fakültesi<br><em>Tez: Karaciğer Parankim Kanaması Modeli Oluşturulan Ratlarda Inula viscosa ve Capsella bursa-pastoris Bitki Ekstrakt Karışımının Hemostatik Etkisi</em></p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-yil">2020–2022</div>
-            <div class="timeline-icerik">
-              <h4>Sağlık Kurumları İşletmeciliği Önlisans</h4>
-              <p>Anadolu Üniversitesi</p>
-            </div>
+            <div class="timeline-icerik"><h4>Sağlık Kurumları İşletmeciliği Önlisans</h4><p>Anadolu Üniversitesi</p></div>
           </div>
         </div>
 
-        <!-- DENEYİM -->
         <div class="timeline-blok">
           <h3 class="blok-baslik">Deneyim</h3>
           <div class="timeline-item">
             <div class="timeline-yil">2023–Halen</div>
-            <div class="timeline-icerik">
-              <h4>Uzman Hekim</h4>
-              <p>Hatay Eğitim ve Araştırma Hastanesi — Genel Cerrahi Kliniği</p>
-            </div>
+            <div class="timeline-icerik"><h4>Uzman Hekim</h4><p>Hatay Eğitim ve Araştırma Hastanesi — Genel Cerrahi Kliniği</p></div>
           </div>
           <div class="timeline-item">
             <div class="timeline-yil">2022–2023</div>
-            <div class="timeline-icerik">
-              <h4>Uzman Hekim</h4>
-              <p>Acıbadem Mehmet Ali Aydınlar Üniversitesi Atakent Hastanesi<br>Kolorektal ve İleri Minimal İnvaziv Cerrahi Kliniği<br><em>(Deprem nedeniyle ayrılış)</em></p>
-            </div>
+            <div class="timeline-icerik"><h4>Uzman Hekim</h4><p>Acıbadem Mehmet Ali Aydınlar Üniversitesi Atakent Hastanesi — Kolorektal ve İleri Minimal İnvaziv Cerrahi Kliniği<br><em>(Deprem nedeniyle ayrılış)</em></p></div>
           </div>
           <div class="timeline-item">
             <div class="timeline-yil">2021–2022</div>
-            <div class="timeline-icerik">
-              <h4>Uzman Hekim (Mecburi Hizmet)</h4>
-              <p>Kilis Devlet Hastanesi</p>
-            </div>
+            <div class="timeline-icerik"><h4>Uzman Hekim (Mecburi Hizmet)</h4><p>Kilis Devlet Hastanesi</p></div>
           </div>
           <div class="timeline-item">
             <div class="timeline-yil">2021–2022</div>
-            <div class="timeline-icerik">
-              <h4>Misafir Öğretim Üyesi</h4>
-              <p>Kilis 7 Aralık Üniversitesi Yusuf Şerefoğlu Sağlık Bilimleri Fakültesi<br>Hemşirelik Bölümü — Cerrahi Hemşireliği Dersi</p>
-            </div>
+            <div class="timeline-icerik"><h4>Misafir Öğretim Üyesi</h4><p>Kilis 7 Aralık Üniversitesi — Cerrahi Hemşireliği Dersi</p></div>
           </div>
           <div class="timeline-item">
             <div class="timeline-yil">2015–2016</div>
-            <div class="timeline-icerik">
-              <h4>Pratisyen Hekim (Mecburi Hizmet)</h4>
-              <p>Altınözü Toplum Sağlığı Merkezi</p>
-            </div>
+            <div class="timeline-icerik"><h4>Pratisyen Hekim (Mecburi Hizmet)</h4><p>Altınözü Toplum Sağlığı Merkezi</p></div>
           </div>
         </div>
 
-        <!-- SERTİFİKA & ÜYELİKLER -->
         <div class="timeline-blok">
           <h3 class="blok-baslik">Sertifikalar</h3>
           <div class="timeline-item">
             <div class="timeline-yil">2022</div>
-            <div class="timeline-icerik">
-              <h4>FTBS — Fellow of Turkish Board of Surgery</h4>
-              <p>Türk Cerrahi Derneği Yeterlilik Sertifikası</p>
-            </div>
+            <div class="timeline-icerik"><h4>FTBS — Fellow of Turkish Board of Surgery</h4><p>Türk Cerrahi Derneği Yeterlilik Sertifikası</p></div>
           </div>
           <div class="timeline-item">
             <div class="timeline-yil">2019</div>
-            <div class="timeline-icerik">
-              <h4>Deney Hayvanları Kullanım Sertifikası</h4>
-              <p>Hatay Mustafa Kemal Üniversitesi</p>
-            </div>
+            <div class="timeline-icerik"><h4>Deney Hayvanları Kullanım Sertifikası</h4><p>Hatay Mustafa Kemal Üniversitesi</p></div>
           </div>
 
-          <h3 class="blok-baslik" style="margin-top:32px">Dernek Üyelikleri</h3>
+          <h3 class="blok-baslik" style="margin-top:28px">Dernek Üyelikleri</h3>
           <ul class="uyelik-listesi">
             <li>Türk Cerrahi Derneği</li>
             <li>Türk Kolon ve Rektum Cerrahisi Derneği</li>
@@ -198,10 +213,10 @@
             <li>Türk Hepatopankreatobiliyer Cerrahi Derneği</li>
           </ul>
 
-          <h3 class="blok-baslik" style="margin-top:32px">Patent</h3>
+          <h3 class="blok-baslik" style="margin-top:28px">Patent</h3>
           <div class="patent-kutu">
             <p><strong>Işıklı ve Aspiratörlü Ameliyat Eldiveni</strong></p>
-            <p>Türk Patent Enstitüsü<br>Başvuru: 08.02.2022<br>Dosya No: 2022/001618</p>
+            <p>Türk Patent Enstitüsü · 08.02.2022<br>Dosya No: 2022/001618</p>
           </div>
         </div>
 
@@ -216,27 +231,57 @@
       <div class="ameliyat-grid">
 
         <div class="ameliyat-kart">
-          <div class="ameliyat-ikon">🦋</div>
+          <div class="ameliyat-ikon-wrap">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="2" width="8" height="30" rx="4" fill="#3b82f6"/>
+              <rect x="14" y="30" width="20" height="5" rx="2.5" fill="#1d4ed8"/>
+              <path d="M20 35 Q24 46 24 47 Q24 46 28 35 Z" fill="#3b82f6"/>
+            </svg>
+          </div>
           <h3>Tiroid Cerrahisi</h3>
           <p>Tiroid bezi hastalıklarının (nodül, guatr, tiroid kanseri) cerrahi tedavisi. Açık veya minimal invaziv yöntemlerle tiroidektomi ve hemitiroidektomi operasyonları gerçekleştirilmektedir.</p>
         </div>
 
         <div class="ameliyat-kart">
-          <div class="ameliyat-ikon">🫀</div>
+          <div class="ameliyat-ikon-wrap">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="10" r="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+              <circle cx="34" cy="10" r="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+              <line x1="14" y1="18" x2="24" y2="34" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+              <line x1="34" y1="18" x2="24" y2="34" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+              <circle cx="24" cy="34" r="3" fill="#1d4ed8"/>
+              <line x1="24" y1="37" x2="18" y2="47" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+              <line x1="24" y1="37" x2="30" y2="47" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
           <h3>Safra Kesesi Ameliyatı</h3>
-          <p>Safra taşı hastalığı ve safra kesesi iltihabının (kolesistit) tedavisinde laparoskopik kolesistektomi uygulanmaktadır. Küçük kesilerle gerçekleştirilen bu yöntemde iyileşme süreci oldukça kısadır.</p>
+          <p>Safra taşı hastalığı ve safra kesesi iltihabının (kolesistit) tedavisinde laparoskopik kolesistektomi uygulanmaktadır. Küçük kesilerle gerçekleştirilen bu yöntemde iyileşme süreci kısadır.</p>
         </div>
 
         <div class="ameliyat-kart">
-          <div class="ameliyat-ikon">⚕️</div>
+          <div class="ameliyat-ikon-wrap">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="9" fill="none" stroke="#3b82f6" stroke-width="3"/>
+              <circle cx="36" cy="12" r="9" fill="none" stroke="#3b82f6" stroke-width="3"/>
+              <path d="M12 21 C12 35 24 44 24 44 C24 44 36 35 36 21" stroke="#3b82f6" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <rect x="10" y="28" width="28" height="4" rx="2" fill="#1d4ed8" opacity="0.5"/>
+              <rect x="10" y="36" width="28" height="4" rx="2" fill="#1d4ed8" opacity="0.3"/>
+            </svg>
+          </div>
           <h3>Sleeve Gastrektomi</h3>
-          <p>Morbid obezite tedavisinde uygulanan bariatrik cerrahi yöntemidir. Midenin yaklaşık %80'i laparoskopik olarak çıkarılarak tüp mide oluşturulur. Kısa hastane kalışı ve hızlı toparlanma sağlar.</p>
+          <p>Morbid obezite tedavisinde uygulanan bariatrik cerrahi yöntemidir. Midenin yaklaşık %80'i laparoskopik olarak çıkarılarak tüp mide oluşturulur. Hızlı toparlanma sağlar.</p>
         </div>
 
         <div class="ameliyat-kart">
-          <div class="ameliyat-ikon">🩺</div>
+          <div class="ameliyat-ikon-wrap">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <rect x="18" y="2" width="12" height="38" rx="6" fill="#3b82f6"/>
+              <rect x="12" y="38" width="24" height="6" rx="3" fill="#1d4ed8"/>
+              <path d="M18 44 Q24 47 24 47 Q24 47 30 44" stroke="#60a5fa" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
           <h3>Karın Duvarı Fıtıkları</h3>
-          <p>Kasık fıtığı, göbek fıtığı ve insizyon fıtıklarının hem açık hem de laparoskopik yöntemle onarımı yapılmaktadır. Yöntem seçimi hastanın durumuna ve fıtığın tipine göre belirlenir.</p>
+          <p>Kasık fıtığı, göbek fıtığı ve insizyon fıtıklarının hem açık hem de laparoskopik yöntemle onarımı yapılmaktadır. Yöntem seçimi hastanın durumuna göre birlikte belirlenir.</p>
         </div>
 
       </div>
@@ -253,13 +298,13 @@
         <ol class="yayin-listesi">
           <li>Öztürk OU et al. "Hemostatic effects of traditional Inula viscosa and Capsella bursa-pastoris plant mixture extract on rat liver parenchymal bleeding model." <em>Turkish Journal of Trauma and Emergency Surgery</em> 28.8 (2022): 1059–1065.</li>
           <li>Ahmed WUR et al. "Intraperitoneal drain placement and outcomes after elective colorectal surgery: international matched, prospective, cohort study." <em>British Journal of Surgery</em> 109, Issue 6 (June 2022).</li>
-          <li>İlke Evrim Seçinti et al. "Kolon kanserini taklit eden kolon lipomu: Olgu sunumu." <em>The Medical Journal of Mustafa Kemal University.</em> doi:10.17944/mkutfd.915352</li>
-          <li>Ozturk OU et al. "A rare Complication of the Meckel Diverticulum: Littre Hernia Causing Necrotizing Fasciitis, A Case Report." <em>SAS Journal of Surgery</em> Volume-3, Issue-4 (Apr 2017): 113–115.</li>
+          <li>İlke Evrim Seçinti et al. "Kolon kanserini taklit eden kolon lipomu: Olgu sunumu." <em>The Medical Journal of Mustafa Kemal University.</em></li>
+          <li>Ozturk OU et al. "A rare Complication of the Meckel Diverticulum: Littre Hernia Causing Necrotizing Fasciitis." <em>SAS Journal of Surgery</em> Volume-3, Issue-4 (Apr 2017): 113–115.</li>
           <li>Mustafa Uğur, Öztürk OU. "A Rare Cause of Acute Appendicitis after Appendectomy: Tip Appendicitis." <em>Turk J Colorectal Dis</em> 2018;28:194–195.</li>
-          <li>Mustafa Ugur, Erol Kilic, Arif Emre, Ahmet Necati Sanlı, Öztürk OU et al. "Indications of Splenectomy and Postoperative Mortality." <em>Sch. J. App. Med. Sci.</em> Mar 2018; 6(3): 1324–1330.</li>
-          <li>Mustafa Uğur, Tümay Özgür, Oğuzhan Özcan, Öztürk OU. "The Effectivity of Centella Asiatica Extract in Experimental Colitis Model Induced by Dextran Sulfate Sodium in Rats." <em>Med J SDU / SDÜ Tıp Fak Derg</em> 2017;24(3):67–74.</li>
+          <li>Mustafa Ugur, Erol Kilic, Arif Emre, Öztürk OU et al. "Indications of Splenectomy and Postoperative Mortality." <em>Sch. J. App. Med. Sci.</em> Mar 2018; 6(3): 1324–1330.</li>
+          <li>Mustafa Uğur, Öztürk OU et al. "The Effectivity of Centella Asiatica Extract in Experimental Colitis Model." <em>Med J SDU / SDÜ Tıp Fak Derg</em> 2017;24(3):67–74.</li>
           <li>Erhan Kizilkaya, Öztürk OU et al. "Does Polydatin Have A Favorable Contribution To Liver Preservation In Ischemic Preconditioning Model?" <em>Sch J App Med Sci</em> Feb 2020; 8(2): 533–540.</li>
-          <li>"Celiac Disease Screening on Students of the Department of Nutrition and Dietetics and Medical School at Ege University." <em>The Journal of Pediatric Research</em> 2015;8(2):66–69.</li>
+          <li>"Celiac Disease Screening on Students at Ege University." <em>The Journal of Pediatric Research</em> 2015;8(2):66–69.</li>
           <li>"Chemical Burn and Bleeding After Phenolization of Pilonidal Disease." <em>Pilonidal Sinus Journal</em> 2024;10(2):21–22.</li>
           <li>Öztürk OU. "Massive simple renal cyst causing colonic obstruction: The largest documented case in the literature." <em>Turkish Journal of Trauma and Emergency Surgery</em> 31(11) (2025): 1148–1151.</li>
           <li>Öztürk OU. "Life threatening bleeding from untreated phyllodes tumor following earthquake induced follow up delay." <em>Interdisciplinary Medical Journal</em> 16(55) (2025): 116–119.</li>
@@ -269,9 +314,9 @@
       <div class="yayin-grup">
         <h3 class="yayin-grup-baslik">Kitap Bölümleri</h3>
         <ol class="yayin-listesi">
-          <li>Öztürk OU (2022). "Dışkının Tam Boşalamaması." Öztürk T, Aykota R (ed.) <em>Tüm Yönleri İle Proktoloji</em> içinde (s. 47–50). Ankara: Akademisyen Kitabevi. ISBN: 9786258125078.</li>
-          <li>Öztürk OU (2022). "Koter Dumanından Eş Zamanlı Doku Tanısı Bir Hayal Mi: iKnife Akıllı Bıçak." Alabaz Ö (ed.) <em>Güncel Genel Cerrahi Çalışmaları 2</em> içinde (s. 139–143). Ankara: Akademisyen Kitabevi. ISBN: 9786258399431.</li>
-          <li>Öztürk OU (2025). "AI in Preoperative Planning." Elcircevi A (ed.) <em>Beyond The Knife</em> içinde (s. 21–30). Ankara: Nobel Tıp Kitabevleri. ISBN: 978-625-5746-87-0.</li>
+          <li>Öztürk OU (2022). "Dışkının Tam Boşalamaması." <em>Tüm Yönleri İle Proktoloji</em> içinde (s. 47–50). Akademisyen Kitabevi. ISBN: 9786258125078.</li>
+          <li>Öztürk OU (2022). "Koter Dumanından Eş Zamanlı Doku Tanısı: iKnife Akıllı Bıçak." <em>Güncel Genel Cerrahi Çalışmaları 2</em> içinde (s. 139–143). Akademisyen Kitabevi. ISBN: 9786258399431.</li>
+          <li>Öztürk OU (2025). "AI in Preoperative Planning." <em>Beyond The Knife</em> içinde (s. 21–30). Nobel Tıp Kitabevleri. ISBN: 978-625-5746-87-0.</li>
         </ol>
       </div>
 
@@ -308,10 +353,7 @@
   <section id="anket">
     <div class="container anket-container">
       <h2 class="section-title section-title-light">Hasta Memnuniyet Anketi</h2>
-      <p class="anket-aciklama">
-        Deneyimlerinizi öğrenmek, hizmet kalitemizi artırmamıza büyük katkı sağlamaktadır.
-        Birkaç dakikanızı ayırarak anketi doldurmanızı rica ederim.
-      </p>
+      <p class="anket-aciklama">Deneyimlerinizi öğrenmek, hizmet kalitemizi artırmamıza büyük katkı sağlamaktadır. Birkaç dakikanızı ayırarak anketi doldurmanızı rica ederim.</p>
       <a href="#" class="btn-beyaz" id="anketBtn">Anketi Doldur</a>
       <p class="anket-not">* Tüm yanıtlar gizli tutulmakta, kimlik bilgisi istenmemektedir.</p>
     </div>
@@ -349,6 +391,15 @@
 
   <!-- FOOTER -->
   <footer>
+    <div class="footer-logo">
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" style="width:32px;height:32px">
+        <circle cx="20" cy="20" r="18" fill="#0f172a"/>
+        <circle cx="20" cy="20" r="18" fill="none" stroke="#3b82f6" stroke-width="1"/>
+        <rect x="17" y="5" width="6" height="18" rx="3" fill="white"/>
+        <rect x="13" y="22" width="14" height="3" rx="1.5" fill="#60a5fa"/>
+        <path d="M17 25 Q20 34 20 35 Q20 34 23 25 Z" fill="white"/>
+      </svg>
+    </div>
     <p>© 2026 Op.Dr. Ozan Utku Öztürk · Tüm hakları saklıdır.</p>
   </footer>
 
