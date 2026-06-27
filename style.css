@@ -310,29 +310,26 @@ body {
   min-width: 100px;
 }
 
-.istatistikler {
-  display: flex;
-  gap: 32px;
+.hipokrat-alinti {
   margin-top: 32px;
   padding-top: 28px;
   border-top: 1px solid #e2e8f0;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
-.istat { display: flex; flex-direction: column; }
-
-.istat-sayi {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--magavi);
-  line-height: 1;
+.hipokrat-alinti em {
   font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: var(--lacivert);
+  font-style: italic;
 }
 
-.istat-label {
-  font-size: 0.8rem;
+.hipokrat-alinti span {
+  font-size: 0.85rem;
   color: var(--gri);
-  margin-top: 4px;
+  letter-spacing: 0.5px;
 }
 
 /* ÖZGEÇMİŞ */
