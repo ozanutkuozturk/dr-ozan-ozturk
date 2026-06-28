@@ -1,25 +1,20 @@
 // YouTube müzik çalar
-let ytPlayer;
 let muzikCaliyor = false;
 
-window.onYouTubeIframeAPIReady = function() {
-  ytPlayer = new YT.Player('ytContainer', {
-    videoId: 'hN_q-_nGv4U',
-    playerVars: { autoplay: 0, controls: 0, playsinline: 1 },
-    events: {
-      onReady: function(e) { e.target.setVolume(70); }
-    }
-  });
-};
+function ytKomut(komut) {
+  const frame = document.getElementById('ytFrame');
+  frame.contentWindow.postMessage(
+    JSON.stringify({ event: 'command', func: komut, args: [] }), '*'
+  );
+}
 
 document.getElementById('muzikBtn').addEventListener('click', () => {
-  if (!ytPlayer || typeof ytPlayer.playVideo !== 'function') return;
   if (muzikCaliyor) {
-    ytPlayer.pauseVideo();
+    ytKomut('pauseVideo');
     document.getElementById('ikonPlay').style.display = 'block';
     document.getElementById('ikonPause').style.display = 'none';
   } else {
-    ytPlayer.playVideo();
+    ytKomut('playVideo');
     document.getElementById('ikonPlay').style.display = 'none';
     document.getElementById('ikonPause').style.display = 'block';
   }
