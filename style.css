@@ -56,8 +56,9 @@ body {
 .logo-mark {
   width: 44px;
   height: 44px;
-  object-fit: contain;
+  object-fit: cover;
   flex-shrink: 0;
+  border-radius: 50%;
 }
 
 .nav-logo span {
@@ -158,10 +159,11 @@ body {
 }
 
 .hero-logo {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   margin-bottom: 28px;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .hero-unvan {
