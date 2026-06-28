@@ -2,16 +2,18 @@
 let ytPlayer;
 let muzikCaliyor = false;
 
-function onYouTubeIframeAPIReady() {
+window.onYouTubeIframeAPIReady = function() {
   ytPlayer = new YT.Player('ytContainer', {
     videoId: 'hN_q-_nGv4U',
-    playerVars: { autoplay: 0, controls: 0 },
-    events: { onReady: () => {} }
+    playerVars: { autoplay: 0, controls: 0, playsinline: 1 },
+    events: {
+      onReady: function(e) { e.target.setVolume(70); }
+    }
   });
-}
+};
 
 document.getElementById('muzikBtn').addEventListener('click', () => {
-  if (!ytPlayer) return;
+  if (!ytPlayer || typeof ytPlayer.playVideo !== 'function') return;
   if (muzikCaliyor) {
     ytPlayer.pauseVideo();
     document.getElementById('ikonPlay').style.display = 'block';
