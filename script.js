@@ -1,3 +1,29 @@
+// YouTube müzik çalar
+let ytPlayer;
+let muzikCaliyor = false;
+
+function onYouTubeIframeAPIReady() {
+  ytPlayer = new YT.Player('ytContainer', {
+    videoId: 'hN_q-_nGv4U',
+    playerVars: { autoplay: 0, controls: 0 },
+    events: { onReady: () => {} }
+  });
+}
+
+document.getElementById('muzikBtn').addEventListener('click', () => {
+  if (!ytPlayer) return;
+  if (muzikCaliyor) {
+    ytPlayer.pauseVideo();
+    document.getElementById('ikonPlay').style.display = 'block';
+    document.getElementById('ikonPause').style.display = 'none';
+  } else {
+    ytPlayer.playVideo();
+    document.getElementById('ikonPlay').style.display = 'none';
+    document.getElementById('ikonPause').style.display = 'block';
+  }
+  muzikCaliyor = !muzikCaliyor;
+});
+
 // Mobil menü aç/kapat
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
