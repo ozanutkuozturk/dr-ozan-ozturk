@@ -438,15 +438,15 @@ body {
 
 .ameliyat-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .ameliyat-kart {
   background: white;
   border: 1px solid #dbeafe;
   border-radius: 20px;
-  padding: 36px 28px;
+  padding: 28px 22px;
   transition: transform 0.25s, box-shadow 0.25s;
   box-shadow: 0 4px 16px rgba(37, 99, 235, 0.06);
   position: relative;
@@ -469,10 +469,11 @@ body {
 }
 
 .ameliyat-gorsel {
-  width: calc(100% + 56px);
-  margin: -36px -28px 24px -28px;
-  height: 200px;
+  width: calc(100% + 44px);
+  margin: -28px -22px 18px -22px;
+  height: 150px;
   object-fit: cover;
+  object-position: center;
   border-radius: 20px 20px 0 0;
   display: block;
 }
@@ -482,6 +483,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 150px;
+  width: calc(100% + 44px);
+  margin: -28px -22px 18px -22px;
+  border-radius: 20px 20px 0 0;
 }
 
 .ameliyat-kart h3 {
@@ -890,7 +895,12 @@ footer {
   .istatistikler { gap: 20px; }
   .ozgecmis-grid { grid-template-columns: 1fr; }
   .hero-butonlar { flex-direction: column; align-items: center; }
+  .ameliyat-grid { grid-template-columns: repeat(2, 1fr); }
 
   .hi-scissors { display: none; }
   .hi-forceps { display: none; }
+}
+
+@media (max-width: 480px) {
+  .ameliyat-grid { grid-template-columns: 1fr; }
 }
