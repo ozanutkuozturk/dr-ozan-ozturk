@@ -1,6 +1,6 @@
 // YouTube müzik çalar
 let muzikCaliyor = false;
-const YT_SRC = 'https://www.youtube.com/embed/hN_q-_nGv4U?autoplay=1&controls=0&loop=1&playlist=hN_q-_nGv4U';
+const YT_SRC = 'https://www.youtube.com/embed/94-PAIMDhaQ?autoplay=1&controls=0&loop=1&playlist=94-PAIMDhaQ';
 
 document.getElementById('muzikBtn').addEventListener('click', () => {
   const frame = document.getElementById('ytFrame');
