@@ -67,11 +67,3 @@ hastaForm && hastaForm.addEventListener('click', (e) => {
   }
 });
 
-// Anket butonu — link eklenmeden tıklanırsa uyarı ver
-document.getElementById('anketBtn').addEventListener('click', (e) => {
-  const href = e.currentTarget.getAttribute('href');
-  if (href === '#') {
-    e.preventDefault();
-    alert('Anket linki henüz eklenmemiştir. Google Form oluşturulduktan sonra buraya eklenecektir.');
-  }
-});
