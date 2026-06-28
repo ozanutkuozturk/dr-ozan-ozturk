@@ -54,8 +54,8 @@ body {
 }
 
 .logo-mark {
-  width: 33px;
-  height: 52px;
+  width: 32px;
+  height: 51px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -158,8 +158,8 @@ body {
 }
 
 .hero-logo {
-  width: 140px;
-  height: 218px;
+  width: 150px;
+  height: 240px;
   margin-bottom: 28px;
   object-fit: contain;
 }
