@@ -58,7 +58,6 @@ body {
   height: 44px;
   object-fit: contain;
   flex-shrink: 0;
-  mix-blend-mode: multiply;
 }
 
 .nav-logo span {
@@ -163,7 +162,6 @@ body {
   height: 160px;
   margin-bottom: 28px;
   object-fit: contain;
-  mix-blend-mode: multiply;
 }
 
 .hero-unvan {
