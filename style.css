@@ -162,6 +162,7 @@ body {
   height: 206px;
   margin-bottom: 28px;
   object-fit: contain;
+  transform: translateX(-40px);
 }
 
 .hero-unvan {
