@@ -31,6 +31,28 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
+// Scroll reveal animasyonu
+const scrollObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('gorunur');
+      scrollObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(
+  '.section-title, .hakkimda-photo, .hakkimda-text, ' +
+  '.ozgecmis-blok, .ameliyat-kart, .yayin-grup, ' +
+  '.anket-icerik, .iletisim-bilgi, .iletisim-saat, .kisisel-bilgiler'
+).forEach((el, i) => {
+  el.classList.add('gorunum-bekle');
+  if (el.classList.contains('ameliyat-kart')) {
+    el.style.transitionDelay = (Array.from(el.parentElement.children).indexOf(el) % 3 * 0.12) + 's';
+  }
+  scrollObserver.observe(el);
+});
+
 // Scroll'da navbar gölgesi
 window.addEventListener('scroll', () => {
   const navbar = document.getElementById('navbar');
