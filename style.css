@@ -805,6 +805,58 @@ body {
   .hasta-form-kart { padding: 28px 20px; }
 }
 
+/* VİDEO SCRUB */
+#video-bolum {
+  height: 500vh;
+  position: relative;
+}
+
+.video-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-sticky video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, transparent 30%, transparent 70%, rgba(0,0,0,0.4) 100%);
+  pointer-events: none;
+}
+
+.video-ilerleme {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 3px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 2px;
+}
+
+.video-ilerleme-bar {
+  height: 100%;
+  width: 0%;
+  background: white;
+  border-radius: 2px;
+  transition: width 0.05s linear;
+}
+
+@media (max-width: 768px) {
+  #video-bolum { height: 350vh; }
+}
+
 /* ===== ANİMASYONLAR ===== */
 
 /* Scroll reveal */

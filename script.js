@@ -31,6 +31,24 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
+// Video scroll scrub
+const scrubVideo = document.getElementById('scrubVideo');
+const videoBar = document.getElementById('videoBar');
+const videoBolum = document.getElementById('video-bolum');
+
+if (scrubVideo && videoBolum) {
+  scrubVideo.addEventListener('loadedmetadata', () => {
+    window.addEventListener('scroll', () => {
+      const bolumTop = videoBolum.getBoundingClientRect().top + window.scrollY;
+      const bolumYukseklik = videoBolum.offsetHeight - window.innerHeight;
+      const scrolled = window.scrollY - bolumTop;
+      const ilerleme = Math.max(0, Math.min(1, scrolled / bolumYukseklik));
+      scrubVideo.currentTime = ilerleme * scrubVideo.duration;
+      if (videoBar) videoBar.style.width = (ilerleme * 100) + '%';
+    });
+  });
+}
+
 // Scroll reveal animasyonu
 const scrollObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
