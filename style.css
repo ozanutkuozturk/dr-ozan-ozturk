@@ -1029,3 +1029,10 @@ footer {
 @media (max-width: 480px) {
   .ameliyat-grid { grid-template-columns: 1fr; }
 }
+#video-bolum .video-sticky #scrubVideo {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #000;
+}
