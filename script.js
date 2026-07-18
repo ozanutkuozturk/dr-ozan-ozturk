@@ -32,20 +32,64 @@ navLinks.querySelectorAll('a').forEach(link => {
 });
 
 // Video scroll scrub
+// Video scroll scrub
 const scrubVideo = document.getElementById('scrubVideo');
 const videoBar = document.getElementById('videoBar');
 const videoBolum = document.getElementById('video-bolum');
+const videoSticky = videoBolum
+  ? videoBolum.querySelector('.video-sticky')
+  : null;
 
-if (scrubVideo && videoBolum) {
+if (scrubVideo && videoBolum && videoSticky) {
+  let animasyonKaresi;
+
+  function videoyuGuncelle() {
+    const bolumTop =
+      videoBolum.getBoundingClientRect().top + window.scrollY;
+
+    const stickyTop =
+      parseFloat(window.getComputedStyle(videoSticky).top) || 0;
+
+    const stickyYukseklik = videoSticky.offsetHeight;
+
+    // Figürün merkezi ekranın merkezine geldiği an
+    const baslangic = bolumTop - stickyTop;
+
+    // Figür sticky konumdan ayrılmadan hemen önce
+    const bitis =
+      bolumTop +
+      videoBolum.offsetHeight -
+      stickyYukseklik -
+      stickyTop;
+
+    const kaydirmaMesafesi = Math.max(1, bitis - baslangic);
+    const kaydirilan = window.scrollY - baslangic;
+
+    const ilerleme = Math.max(
+      0,
+      Math.min(1, kaydirilan / kaydirmaMesafesi)
+    );
+
+    scrubVideo.currentTime = ilerleme * scrubVideo.duration;
+
+    if (videoBar) {
+      videoBar.style.width = `${ilerleme * 100}%`;
+    }
+  }
+
+  function kaydirmayiIsle() {
+    cancelAnimationFrame(animasyonKaresi);
+    animasyonKaresi = requestAnimationFrame(videoyuGuncelle);
+  }
+
   scrubVideo.addEventListener('loadedmetadata', () => {
-    window.addEventListener('scroll', () => {
-      const bolumTop = videoBolum.getBoundingClientRect().top + window.scrollY;
-      const bolumYukseklik = videoBolum.offsetHeight - window.innerHeight;
-      const scrolled = window.scrollY - bolumTop;
-      const ilerleme = Math.max(0, Math.min(1, scrolled / bolumYukseklik));
-      scrubVideo.currentTime = ilerleme * scrubVideo.duration;
-      if (videoBar) videoBar.style.width = (ilerleme * 100) + '%';
+    window.addEventListener('scroll', kaydirmayiIsle, {
+      passive: true
     });
+
+    window.addEventListener('resize', kaydirmayiIsle);
+
+    videoyuGuncelle();
   });
 }
 
