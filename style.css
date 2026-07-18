@@ -1040,3 +1040,14 @@ footer {
   transform: none !important;
   transition: none !important;
 }
+/* Ana girişteki logo kesinlikle hareket etmesin */
+#hero .hero-content > img.hero-logo,
+#hero .hero-content > img.hero-logo:hover {
+  animation: none !important;
+  -webkit-animation: none !important;
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: none !important;
+  transition: none !important;
+}
