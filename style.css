@@ -1033,13 +1033,6 @@ footer {
   object-position: center center !important;
   background: #000;
 }
-/* Üst menüdeki amblem hareket etmesin */
-#navbar .logo-mark,
-#navbar .nav-logo:hover .logo-mark {
-  animation: none !important;
-  transform: none !important;
-  transition: none !important;
-}
 /* Ana girişteki logo kesinlikle hareket etmesin */
 #hero .hero-content > img.hero-logo,
 #hero .hero-content > img.hero-logo:hover {
