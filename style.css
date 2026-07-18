@@ -999,18 +999,15 @@ footer {
 
 /* MOBİL */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 68px;
-    left: 0;
-    right: 0;
-    background: rgba(15, 23, 42, 0.98);
-    padding: 20px 24px;
-    border-bottom: 1px solid rgba(59, 130, 246, 0.3);
-    gap: 16px;
+  #video-bolum {
+    height: 180vh;
   }
+
+  .video-sticky {
+    top: 25vh;
+    height: 50vh;
+  }
+}
 
   .nav-links.acik { display: flex; }
   .nav-toggle { display: block; }
