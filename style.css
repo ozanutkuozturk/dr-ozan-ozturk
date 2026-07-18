@@ -1044,3 +1044,22 @@ footer {
   scale: none !important;
   transition: none !important;
 }
+/* Profil fotoğrafı çerçeveyi tamamen doldursun */
+#hakkimda .hakkimda-photo {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  overflow: hidden;
+}
+
+#hakkimda .profil-foto {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  object-fit: cover !important;
+  object-position: center center;
+}
