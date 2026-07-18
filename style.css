@@ -807,14 +807,14 @@ body {
 
 /* VİDEO SCRUB */
 #video-bolum {
-  height: 500vh;
+  height: 250vh;
   position: relative;
 }
 
 .video-sticky {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   overflow: hidden;
   background: #000;
@@ -854,7 +854,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  #video-bolum { height: 350vh; }
+  #video-bolum { height: 180vh; }
+  .video-sticky { height: 50vh; }
 }
 
 /* ===== ANİMASYONLAR ===== */
