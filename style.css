@@ -531,6 +531,10 @@ object-position: center center;
   padding-left: 4px;
 }
 
+.odul-listesi { list-style: none; padding-left: 0; }
+.odul-listesi li::before { content: "🏆"; margin-right: 8px; }
+.odul-listesi li strong { color: var(--lacivert); }
+
 .yayin-listesi li em {
   color: var(--lacivert);
   font-style: italic;
